@@ -19,11 +19,13 @@ Measure this
 
 <table border="0">
  <tr>
-    <td><b style="font-size:30px">SHARP GP2Y0A02YK0F</b></td>
-    <td><b style="font-size:30px">SHARP GP2Y0A710K0F 2</b></td>
+    <td><b style="font-size:30px">**SHARP GP2Y0A02YK0F**</b></td>
+    <td><b style="font-size:30px">**SHARP GP2Y0A710K0F**</b></td>
+    <td><b style="font-size:30px">**RASPBERRY PI 3 MODEL B+**</b></td>
  </tr>
  <tr>
     <td><img src="https://user-images.githubusercontent.com/54172575/63335910-c9266180-c370-11e9-8ed4-ffd122402ad4.jpg" width="300" /></td>
     <td><img src="https://user-images.githubusercontent.com/54172575/63336549-e6a7fb00-c371-11e9-92f0-e494929007bf.jpg" width="300" /></td>
+    <td><img src="https://user-images.githubusercontent.com/54172575/63336903-95e4d200-c372-11e9-80f1-a3af60130970.jpg" width="300" /></td>
  </tr>
 </table>
