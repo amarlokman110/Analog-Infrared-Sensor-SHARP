@@ -9,7 +9,9 @@ SHARP GP2Y0A02YK0F
 <img src="https://user-images.githubusercontent.com/54172575/63336549-e6a7fb00-c371-11e9-92f0-e494929007bf.jpg" height="250">
 SHARP GP2Y0A710K0F
 
-![SHARP 1](https://user-images.githubusercontent.com/54172575/63335910-c9266180-c370-11e9-8ed4-ffd122402ad4.jpg height="250" "title-1") ![SHARP 2](https://user-images.githubusercontent.com/54172575/63336549-e6a7fb00-c371-11e9-92f0-e494929007bf.jpg height="250" "title-2")
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/54172575/63335910-c9266180-c370-11e9-8ed4-ffd122402ad4.jpg" width="250" />
+  <img src="https://user-images.githubusercontent.com/54172575/63336549-e6a7fb00-c371-11e9-92f0-e494929007bf.jpg" width="250" /> 
 
 
 ![Rpi3 model B+](https://user-images.githubusercontent.com/54172575/63336903-95e4d200-c372-11e9-80f1-a3af60130970.jpg | width=100)
