@@ -8,8 +8,8 @@ Measuring the distance by using analog infrared sensor with SHARP brand. Two typ
   <img src="https://user-images.githubusercontent.com/54172575/63336549-e6a7fb00-c371-11e9-92f0-e494929007bf.jpg" width="300" />
 
 <p float="left">
-   SHARP GP2Y0A02YK0F
-   SHARP GP2Y0A710K0F
+   <SHARP GP2Y0A02YK0F width="300" />
+   <SHARP GP2Y0A710K0F width="300" />
 
 
 ![Rpi3 model B+](https://user-images.githubusercontent.com/54172575/63336903-95e4d200-c372-11e9-80f1-a3af60130970.jpg | width=100)
