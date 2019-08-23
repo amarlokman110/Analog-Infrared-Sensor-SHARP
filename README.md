@@ -16,3 +16,30 @@ Measuring the distance by using analog infrared sensor with SHARP brand. Two typ
     <td><img src="https://user-images.githubusercontent.com/54172575/63336903-95e4d200-c372-11e9-80f1-a3af60130970.jpg" width="300" /></td>
  </tr>
 </table>
+
+The MCP3008 is a low cost 8-channel 10-bit analog to digital converter. Since Infrared needs Analog input, I use this chip to convert digital input from Raspberry pi to analog input for the infrared sensor. 
+   1. MCP3008 VDD to Raspberry Pi 3.3V
+   2. MCP3008 VREF to Raspberry Pi 3.3V
+   3. MCP3008 AGND to Raspberry Pi GND
+   4. MCP3008 DGND to Raspberry Pi GND
+   5. MCP3008 CLK to Raspberry Pi pin 18
+   6. MCP3008 DOUT to Raspberry Pi pin 23
+   7. MCP3008 DIN to Raspberry Pi pin 24
+   8. MCP3008 CS/SHDN to Raspberry Pi pin 25
+
+<img src="https://user-images.githubusercontent.com/54172575/63561801-c9e80f00-c58d-11e9-930b-efd69f71d85f.gif" width="300" />
+
+## Library Install 
+Install the library from the Python package index with a few commands, or you can install the library from its source on GitHub.
+   git clone https://github.com/adafruit/Adafruit_Python_MCP3008.git
+   cd Adafruit_Python_MCP3008
+   sudo python setup.py install
+   sudo pip install adafruit-mcp3008
+   
+## Analog Input from MCP3008
+Notice this line that reads an ADC channel value and saves it in a list:
+
+values[i] = mcp.read_adc(i)
+
+This line is calling the read_adc() function from the MCP3008 Python library.  The function takes one parameter, the channel number to read (a value of 0 to 7).  As a result the function will return the current ADC value of that channel.
+
