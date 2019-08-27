@@ -1,9 +1,19 @@
+# ******************************************
+# © 2019 Amar Lokman Some Rights Reserved
+# ******************************************
+
+# ---------------------------------------------------------
+# ADD MODULES
+# ---------------------------------------------------------
 import time
 import Adafruit_GPIO.SPI as SPI
 import Adafruit_MCP3008
 import datetime
 import RPi.GPIO as GPIO
 
+# ---------------------------------------------------------
+# GPIO CONFIGURATION
+# ---------------------------------------------------------
 GPIO.setmode(GPIO.BCM)
 
 CLK = 11
