@@ -31,10 +31,10 @@ The MCP3008 is a low cost 8-channel 10-bit analog to digital converter. Since In
 
 ## Library Install 
 Install the library from the Python package index with a few commands, or you can install the library from its source on GitHub.
-   git clone https://github.com/adafruit/Adafruit_Python_MCP3008.git
-   cd Adafruit_Python_MCP3008
-   sudo python setup.py install
-   sudo pip install adafruit-mcp3008
+git clone https://github.com/adafruit/Adafruit_Python_MCP3008.git
+cd Adafruit_Python_MCP3008
+sudo python setup.py install
+sudo pip install adafruit-mcp3008
    
 ## Analog Input from MCP3008
 Notice this line that reads an ADC channel value and saves it in a list:
