@@ -1,4 +1,3 @@
-
 # ******************************************
 # © 2019 Amar Lokman Some Rights Reserved
 # ******************************************
@@ -20,7 +19,7 @@ GPIO.setwarnings(False)
 GPIO_RELAY = 20
 GPIO_LED = 16
 GPIO.setup(GPIO_LED, GPIO.OUT, initial=GPIO.LOW)
-GPIO.setup(GPIO_RELAY,GPIO.OUT)
+GPIO.setup(GPIO_RELAY,GPIO.OUT, initial=GPIO.HIGH)
 
 CLK = 11
 MISO = 9
@@ -58,11 +57,13 @@ if __name__ ==     '__main__':
 
             if (count1 == 0) :
                 if ( dist > 40 and dist < 220):
+                    # Enter Condition
+                    # Switch ON bulb and LED
                     GPIO.output (GPIO_RELAY,GPIO.LOW)
                     GPIO.output(GPIO_LED, GPIO.HIGH)
                     count1 += 1
                     count2 = 0
-                    print ("----------------------")
+                    print ("---------- State 1 ------------")
                     
                     time.sleep(2)
 
@@ -71,22 +72,24 @@ if __name__ ==     '__main__':
                     GPIO.output (GPIO_RELAY,GPIO.LOW)
                     GPIO.output(GPIO_LED, GPIO.HIGH)
                     count1 += 1
-                    print ("----------------------")
+                    print ("---------- State 2 ------------")
                     time.sleep(2)
 
                 else:
                     if (count2 == 0) :
+                        # Enter Condition
+                        # Switch OFF bulb and LED
                         GPIO.output (GPIO_RELAY,GPIO.HIGH)
                         GPIO.output(GPIO_LED, GPIO.LOW)
                         count2 += 1
-                        print ("----------------------")
+                        print ("---------- State 3 ------------")
                         time.sleep(1)
                     
                     else:
                         GPIO.output (GPIO_RELAY,GPIO.HIGH)
                         GPIO.output(GPIO_LED, GPIO.LOW)
                         count1 = 0
-                        print ("----------------------")
+                        print ("---------- State 4 ------------")
                         time.sleep(1)
            
     except KeyboardInterrupt:
