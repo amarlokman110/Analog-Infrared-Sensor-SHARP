@@ -43,3 +43,34 @@ values[i] = mcp.read_adc(i)
 
 This line is calling the read_adc() function from the MCP3008 Python library.  The function takes one parameter, the channel number to read (a value of 0 to 7).  As a result the function will return the current ADC value of that channel.
 
+## Source Code 
+
+### SHARP Infrared Sensor 10cm to 150cm CONFIGURATION
+```
+def distance():
+    runningTotal = 0
+    avgFactor = 30
+    for x in range(avgFactor):
+        v = (mcp.read_adc(2) / 1023.0) * 3.3
+        distance1 = (16.2537 * v**4 - 129.893 * v**3 + 382.268 * v**2 - 512.611 * v + 301.439)
+        runningTotal = runningTotal + distance1
+    else:
+        distance = (runningTotal / avgFactor)
+
+    return distance
+```
+
+### SHARP Infrared Sensor 100cm to 550cm CONFIGURATION
+```
+def distance():
+    runningTotal = 0
+    avgFactor = 75
+    for x in range(avgFactor):
+        v = mcp.read_adc(0)
+        distance = 28250 / (v-229.5)
+        runningTotal = runningTotal + distance
+    else:
+        distance = (runningTotal / avgFactor)
+
+    return distance
+```
