@@ -13,6 +13,7 @@ import RPi.GPIO as GPIO
 # ---------------------------------------------------------
 # GPIO CONFIGURATION
 # ---------------------------------------------------------
+# Set BCM Pin for this Pi
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 
@@ -26,8 +27,14 @@ MISO = 9
 MOSI = 10
 CS = 8
 mcp = Adafruit_MCP3008.MCP3008(clk=CLK, cs=CS, miso=MISO, mosi=MOSI)
+
+# ---------------------------------------------------------
+# CONSTANT CONFIGURATION
+# ---------------------------------------------------------
 count1 = 0
 count2 = 0
+minHeight = 40
+maxHeight = 250
 
 # ---------------------------------------------------------
 # SHARP Infrared Sensor 100cm to 550cm CONFIGURATION
@@ -56,7 +63,7 @@ if __name__ ==     '__main__':
             print ("****************************************************")
 
             if (count1 == 0) :
-                if ( dist > 40 and dist < 220):
+                if ( dist > minHeight and dist < maxHeight):
                     # Enter Condition
                     # Switch ON bulb and LED
                     GPIO.output (GPIO_RELAY,GPIO.LOW)
@@ -68,7 +75,7 @@ if __name__ ==     '__main__':
                     time.sleep(2)
 
             else:
-                if ( dist > 40 and dist < 220):
+                if ( dist > minHeight and dist < maxHeight):
                     GPIO.output (GPIO_RELAY,GPIO.LOW)
                     GPIO.output(GPIO_LED, GPIO.HIGH)
                     count1 += 1
