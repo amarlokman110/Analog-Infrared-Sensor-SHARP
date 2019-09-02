@@ -43,6 +43,20 @@ values[i] = mcp.read_adc(i)
 
 This line is calling the read_adc() function from the MCP3008 Python library.  The function takes one parameter, the channel number to read (a value of 0 to 7).  As a result the function will return the current ADC value of that channel.
 
+## Relay DC5V Tongling 
+
+<img src="https://user-images.githubusercontent.com/54172575/64125958-77ed8780-cdde-11e9-8542-fdd294aae4b3.JPG" width="300" />
+
+This is a 5V 1 Channcel optical isolated relay interface board, it can be controlled directly by raspberry pi. 
+* 5V 1-Channel Relay interface board, and each one needs 15-20mA Driver Current & 5mA trigger current
+* Equiped with high-current relay, AC250V 10A ; DC30V 10A
+* DC+ Power supply Positive 5V DC
+* DC- Power supply Negative 0V DC
+* IN: Signal Input Can be TTL High / Low depends on jumper setting
+* NO: Dry contact normally Open
+* COM: Dry contact Common
+* NC: Dry contact normally Close
+
 ## Source Code 
 
 ### SHARP Infrared Sensor 10cm to 150cm CONFIGURATION
